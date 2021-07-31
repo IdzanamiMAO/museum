@@ -4,40 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>museum</title>
+  <link rel="stylesheet" href="/style.css"> <!--стили css-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--шрифты: Forum и Roboto-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div>
-      <div class="logo">
-        <img src="" alt="Louvre" class="logo__img">
-        <a class="logo__title-link" href="#">Louvre</a>
+  <header class="header"> 
+    <div class="container logo">
+      <div>
+        <img src="/assets/svg/logo.svg" alt="Louvre" class="logo__img">
+        <a class="logo__title-link" href="">Louvre</a>
       </div>
       <nav>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Visiting</a>
+        <ul class="nav__list--header">
+          <li class="nav__item--header">
+            <a href="#visiting" class="nav__link">Visiting</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Explore</a>
+          <li class="nav__item--header">
+            <a href="#explore" class="nav__link">Explore</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Video</a>
+          <li class="nav__item--header">
+            <a href="#video" class="nav__link">Video</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Tickets</a>
+          <li class="nav__item--header">
+            <a href="#tickets" class="nav__link">Tickets</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Contacts</a>
+          <li class="nav__item--header">
+            <a href="#contacts" class="nav__link">Contacts</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
-    <section class="Welcome">
-      <div class="welcome__content">
+  <main class="main">
+    <section class="section dark-section" id="welcome">
+      <div class="container welcome">
         <h1 class="welcome__caption">
           Welcome to the Louvre
         </h1>
@@ -49,13 +52,13 @@
         </div>
       </div>
     </section>
-    <section class="Visiting">
-      <div class="virtual-tour">
+    <section class="section" id="visiting">
+      <div class="container virtual-tour">
         <h2 class="multimedia-title">
           Virtual tour
         </h2>
         <div class="visiting__card">
-          <img src="#" alt="Royal Palace" class="visiting__card--img">
+          <img src="/assets/img/tour_1.jpg" alt="Royal Palace" class="visiting__card--img">
           <h3 class="visiting__card--title">
            Royal Palace
           </h3>
@@ -67,7 +70,7 @@
           </p>
         </div>
         <div class="visiting__card">
-          <img src="#" alt="Denon Wing" class="visiting__card--img">
+          <img src="/assets/img/tour_2.jpg" alt="Denon Wing" class="visiting__card--img">
           <h3 class="visiting__card--title">
             Denon Wing
           </h3>
@@ -79,7 +82,7 @@
            </p>
         </div>
         <div class="visiting__card">
-          <img src="#" alt="Colonnade Perrault" class="visiting__card--img">
+          <img src="/assets/img/tour_3.jpg" alt="Colonnade Perrault" class="visiting__card--img">
           <h3 class="visiting__card--title">
             Colonnade Perrault
           </h3>
@@ -91,7 +94,7 @@
           </p>
         </div>
         <div class="visiting__card">
-          <img src="#" alt="Greek hall" class="visiting__card--img">
+          <img src="/assets/img/tour_4.jpg" alt="Greek hall" class="visiting__card--img">
           <h3 class="visiting__card--title">
             Greek hall
           </h3>
@@ -103,7 +106,7 @@
           </p>
         </div>
         <div class="visiting__card">
-          <img src="#" alt="Mona Lisa" class="visiting__card--img">
+          <img src="/assets/img/tour_5.jpg" alt="Mona Lisa" class="visiting__card--img">
           <h3 class="visiting__card--title">
             Mona Lisa
           </h3>
@@ -115,7 +118,7 @@
           </p>
         </div>
         <div class="visiting__card">
-          <img src="#" alt="Night Palace" class="visiting__card--img">
+          <img src="/assets/img/tour_6.jpg" alt="Night Palace" class="visiting__card--img">
           <h3 class="visiting__card--title">
             Night Palace
           </h3>
@@ -128,120 +131,128 @@
         </div>
       </div>
     </section>
-    <section class="Explore">
-      <div class="">
+    <section class="section dark-section" id="explore">
+      <div class="container">
+        <div class="explore">
+          <h2 class="explore__title">
+            Picture explore
+          </h2>
+          <p class="explore__desc">
+            Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
+          </p>
+          <p class="explore__desc">
+            It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the previous restoration in the 19th century.
+          </p>
+          <p class="explore__desc">
+            The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.
+          </p>
+        </div>
+        <img src="/assets/img/explore_2.jpg" alt="Rectangle" class="explore__img">
+      </div>
+    </section>
+    <section class="section video-section" id="video">
+      <div class="container video">
+        <video src="#">
+        </video>
+        <div class="video__wrapper">
+          <h2 class="multimedia-title" >
+            Video journey
+          </h2>
+          <p class="video__desc">
+            Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section dark-section" id="tickets">
+      <div class="container tickets">
         <h2 class="desc-title">
-          Picture explore
+          Buy tickets
         </h2>
-        <p class="explore__desc">
-          Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
-        </p>
-        <p class="explore__desc">
-          It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the previous restoration in the 19th century.
-        </p>
-        <p class="explore__desc">
-          The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.
-        </p>
-      </div>
-      <img src="" alt="Rectangle" class="explore__img">
-    </section>
-    <section class="Video">
-      <video src="#">
-      </video>
-      <div class="video__wrapper">
-        <h2 class="multimedia-title" >
-          Video journey
-        </h2>
-        <p class="video__desc">
-          Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code
-        </p>
-      </div>
-    </section>
-    <section class="Tickets">
-      <h2 class="desc-title">
-        Buy tickets
-      </h2>
-      <div class="wrapper">
-        <img src="" alt="Rectangle">
-        <form action="">
-          <h4 class="ticket__type">
-            Ticket Type
-          </h4>
-          <label>
-            <input type="radio" name="type">Permanent exhibition
-          </label> <br>
-          <label>
-            <input type="radio" name="type">Temporary exhibition
-          </label> <br>
-          <label>
-            <input type="radio" name="type">Combined Admission
-          </label>
-          <h4 class="ticket__amount">
-            Amount
-          </h4>
-          <p>Basic 18+</p>
-          <input type="text">
-          <input type="text" value="1">
-          <input type="text">
-          <p>Senior 65+</p>
-          <input type="text">
-          <input type="text" value="1">
-          <input type="text">
-          <h4 class="ticket__Total">
-            Total
-          </h4>
-          <button>Buy Now</button>
-        </form>
+        <div class="wrapper">
+          <img src="/assets/img/ticket.jpg" alt="Rectangle">
+          <form action="">
+            <h4 class="ticket__type">
+              Ticket Type
+            </h4>
+            <label>
+              <input type="radio" name="type">Permanent exhibition
+            </label> <br>
+            <label>
+              <input type="radio" name="type">Temporary exhibition
+            </label> <br>
+            <label>
+              <input type="radio" name="type">Combined Admission
+            </label>
+            <h4 class="ticket__amount">
+              Amount
+            </h4>
+            <p>Basic 18+</p>
+            <button>-</button>
+            <input type="number" value="1">
+            <button>+</button>
+            <p>Senior 65+</p>
+            <button>-</button>
+            <input type="number" value="1">
+            <button>+</button>
+            <h4 class="ticket__Total">
+              Total € <span>220 </span>
+            </h4>
+            <button>Buy Now</button>
+          </form>
+        </div>
       </div>
     </section>
-    <section class="Contacts">
-      <h2 class="multimedia__title">
-        Contacts
-      </h2>
-      <div class="">
-        <h3 class="contacts__title">
-          Palais Royal Musee du Louvre
-        </h3>
-        <p class="contacts__desc">
-          address: 75001 Paris, France
-        </p>
-        <p class="contacts__desc">
-          phone: +33(0) 1 40 20 50 50
-        </p>
-        <p class="contacts__desc">
-          mail: info@louvre.fr
-        </p>
+    <section class="section" id="contacts">
+      <div class="container ">
+        <div class="contacts">
+          <h2 class="multimedia__title">
+            Contacts
+          </h2>
+          <div class="" itemscope itemtype="https://schema.org/Organization">
+            <h3 class="contacts__title" itemprop="name">
+            Palais Royal Musee du Louvre
+            </h3>
+            <p class="contacts__desc">
+              address: <span itemprop="address">Paris, France</span>
+            </p>
+            <p class="contacts__desc">
+              phone: <span itemprop="telephone">+33(0) 1 40 20 50 50</span>
+            </p>
+            <p class="contacts__desc">
+              mail: <span itemprop="email">info@louvre.fr</span>
+            </p>
+          </div>
+        </div>
+        <img src="/assets/img/map.png" alt="map" class="contacts__map">
       </div>
-      <img src="" alt="map" class="contacts__map">
     </section>
   </main>
-  <footer>
-    <div>
+  <footer class="footer">
+    <div class="footer__wrapper">
       <div class="logo">
-        <img src="" alt="Louvre" class="logo__img">
+        <img src="/assets/svg/logo.svg" alt="Louvre" class="logo__img">
         <a class="logo__title-link" href="#">Louvre</a>
       </div>
       <nav>
         <ul class="footer__nav--list">
           <li class="footer__nav--item">
-            <a href="#" class="footer__nav--link">Welcome</a>
+            <a href="#welcome" class="footer__nav--link">Welcome</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#" class="footer__nav--link">Visiting</a>
+            <a href="#visiting" class="footer__nav--link">Visiting</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#" class="footer__nav--link">Explore</a>
-          </li>
-        </ul>
-        <ul class="footer__nav--list">
-          <li class="footer__nav--item">
-            <a href="#" class="footer__nav--link">Video</a>
+            <a href="#explore" class="footer__nav--link">Explore</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#" class="footer__nav--link">Tickets</a>
+            <a href="#video" class="footer__nav--link">Video</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#" class="footer__nav--link">Contacts</a>
+            <a href="#tickets" class="footer__nav--link">Tickets</a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="#contacts" class="footer__nav--link">Contacts</a>
           </li>
         </ul>
       </nav>

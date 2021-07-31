@@ -1,0 +1,76 @@
+html{
+  background-color: cadetblue;
+  box-sizing: border-box;
+  /*max-width: 1920px;*/
+  scroll-behavior: smooth
+}
+.container{
+  max-width: 1440px;
+  margin: 0px auto;
+ }
+.section {
+  /*border: 1px solid red;*/
+  padding: 75px 0px;
+}
+.dark-section, .header, .footer{
+  background-color: #030303;
+}
+.video-section{
+  padding: 90px 0px;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* хедер*/
+.header{
+  padding: 74px 0px 76px;
+}
+.logo{
+  display: flex;
+  /*border: 1px solid yellow;*/
+  justify-content: space-between;
+}
+.logo__img{
+  width: 50px;
+  border-radius: 0px;
+}
+.logo__title-link{
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-left: 15px;
+}
+.nav__list--header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  max-width: 720px;
+}
+.nav__item--header{
+  padding-left: 76px;
+  /*line-height: 50px; проблемы?!*/
+}
+.nav__item--header:first-child{
+  padding-left: 0px;
+}
+.nav__link{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+/*конец хедера*/
