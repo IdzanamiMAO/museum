@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> <!--шрифты: Forum и Roboto-->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
-</head>git
+</head>
 <body>
   <header class="header"> 
     <div class="container logo">
@@ -205,16 +205,16 @@
     </section>
     <section class="section" id="contacts">
       <div class="container ">
+        <h2 class="section__title underline-title">
+          Contacts
+        </h2>
         <div class="contacts">
-          <h2 class="section__title underline-title">
-            Contacts
-          </h2>
-          <div class="" itemscope itemtype="https://schema.org/Organization">
+          <div class="contacts__wrapper" itemscope itemtype="https://schema.org/Organization">
             <h3 class="contacts__title" itemprop="name">
-            Palais Royal Musee du Louvre
+              Palais Royal <br>Musee du Louvre
             </h3>
             <p class="contacts__desc">
-              address: <span itemprop="address">Paris, France</span>
+            address: <span itemprop="address">75001 Paris, France</span>
             </p>
             <p class="contacts__desc">
               phone: <span itemprop="telephone">+33(0) 1 40 20 50 50</span>
@@ -223,9 +223,8 @@
               mail: <span itemprop="email">info@louvre.fr</span>
             </p>
           </div>
+          <img src="/assets/img/map.png" alt="map" class="contacts__map">
         </div>
-        <img src="/assets/img/map.png" alt="map" class="contacts__map">
-      </div>
     </section>
   </main>
   <footer class="footer">
