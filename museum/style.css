@@ -120,7 +120,7 @@ a{
   font-size: 22px;
   line-height: 38px;
   color: #FFFFFF;
-  padding-top: 28px;
+  padding-top: 25px;
   margin: 0px;
 }
 .explore__desc:first-child{
@@ -129,13 +129,34 @@ a{
 .explore__desc--color{
   color: #CAAA7D;
 }
+.contacts__title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+  margin: 0px;
+  padding-bottom: 36px;
+}
+.contacts__desc{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
 /* конец текста*/
 
 /*блок welcome*/
 .welcome{
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url("/assets/img/background_welcome.jpg"); /*картинка уезжает*/
+  background-image: url("/assets/img/background_welcome.jpg");
   background-repeat: no-repeat;
   background-position: calc(100% + 7px);
 }
@@ -200,7 +221,17 @@ a{
 /* конец блока tickets*/
 
 /*блок contacts*/
+.contacts{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 103px;
+}
+.contacts__wrapper{
+  padding-top: 10px;
+  max-width: 282px;
 
+
+}
 /* конец блока contacts*/
 
 /*футер*/
