@@ -2,21 +2,20 @@ html{
   background-color: cadetblue;
   box-sizing: border-box;
   /*max-width: 1920px;*/
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 .container{
   max-width: 1440px;
   margin: 0px auto;
  }
-.section {
-  /*border: 1px solid red;*/
-  padding: 75px 0px;
+.section {  /*отступы у всех секций*/
+  padding: 75px 0px 0px;
 }
 .dark-section, .header, .footer{
   background-color: #030303;
 }
 .video-section{
-  padding: 90px 0px;
+  padding: 90px 0px 75px;
 }
 li{
   list-style: none;
@@ -31,12 +30,8 @@ a{
 }
 .logo{
   display: flex;
-  /*border: 1px solid yellow;*/
   justify-content: space-between;
-}
-.logo__img{
-  width: 50px;
-  border-radius: 0px;
+  align-items: center;
 }
 .logo__title-link{
   font-family: Forum;
@@ -47,7 +42,11 @@ a{
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-left: 15px;
+  display: block;
+  padding-left: 70px;
+  background-image: url("/assets/svg/logo.svg");
+  background-repeat: no-repeat;
+  background-position-y: 7px;
 }
 .nav__list--header{
   display: flex;
@@ -59,7 +58,7 @@ a{
 }
 .nav__item--header{
   padding-left: 76px;
-  /*line-height: 50px; проблемы?!*/
+  line-height: 50px;
 }
 .nav__item--header:first-child{
   padding-left: 0px;
@@ -74,3 +73,70 @@ a{
   color: #FFFFFF;
 }
 /*конец хедера*/
+
+/*текст*/
+.dark-section__tittle{
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0px;
+}
+.section__title{
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #9D8665;
+  margin: 0px;
+}
+/* конец текств*/
+
+/*блок welcome*/
+.welcome{
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: url("/assets/img/background_welcome.jpg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0px);
+}
+.wrapper{
+  padding: 114px 0px 246px;
+}
+.welcome__desc{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding: 26px 0px 76px;
+  margin: 0px;
+}
+.welcome__button{
+  background-color: #710707;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+  padding: 25px 68px;
+  display: inline-block;
+  max-width: 361px;
+}
+.button__caption{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+/* конец блока welcome*/
