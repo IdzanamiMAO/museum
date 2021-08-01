@@ -161,13 +161,13 @@ a{
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
-  padding-top: 87px;
+  padding-top: 88px;
 }
 .visiting__card{
   display: flex;
   flex-direction: column;
   max-width: 440px;
-  padding-top: 15px;
+  padding-top: 16px;
 }
 .visiting__card--title{
   font-family: Forum;
@@ -226,11 +226,11 @@ a{
   font-size: 22px;
   line-height: 38px;
   color: #FFFFFF;
-  padding-top: 26px;
+  padding-top: 27px;
   margin: 0px;
 }
 .explore__desc:first-child{
-  padding-top: 104px;
+  padding-top: 105px;
 }
 .explore__desc--color{
   color: #CAAA7D;
@@ -242,6 +242,132 @@ a{
 /* конец блока video*/
 
 /*блок tickets*/
+.tisket{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 103px;
+}
+.form--ticket{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1px;
+  text-align: left;
+}
+.ticket-wrapper:first-child{
+padding-right: 240px;
+}
+.ticket__form--title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin: 0px;
+  padding: 1px 0px 50px 3px;
+}
+.ticket__type{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin: 0px;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.ticket__amount{
+margin-left: 15px;
+}
+.input--radio{
+  margin: 0px 24px 56px 0px;
+  height: 18px;
+  width: 18px;
+}
+.number{
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  border: 3px solid #FFFFFF;
+  margin: 11px 0px 34px 19px;
+}
+.number:last-of-type{
+  margin-bottom: 53px;
+}
+.number input[type="number"]{
+  display: block;
+  height: 44px;
+  font-size: 22px;
+  line-height: 32px;
+  width: 100%;
+  padding: 0px 0px 0px 6px;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #030303;
+  color: #FFFFFF;
+}
+.number-minus{
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  width: 50px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 22px;
+  font-weight: 300;
+  background-color: #030303;
+  color: #FFFFFF;
+}
+.number-plus{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: 50px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 22px;
+  font-weight: 300;
+  background-color: #030303;
+  color: #FFFFFF;
+}
+.amount{
+  padding-bottom: 14px;
+  text-align: right;
+  letter-spacing: 1px;
+}
+.total {
+  text-align: right;
+  letter-spacing: 1px;
+}
+.buy{
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  width: 175px;
+  height: 50px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  color: #030303;
+}
+.img__ticket{
+  max-width: 720px;
+}
 
 /* конец блока tickets*/
 

@@ -167,40 +167,48 @@
       </div>
     </section>
     <section class="section dark-section" id="tickets">
-      <div class="container tickets">
+      <div class="container">
         <h2 class="dark-section__tittle underline-title">
           Buy tickets
         </h2>
-        <div class="wrapper">
-          <img src="./assets/img/ticket.jpg" alt="Rectangle">
-          <form action=""> <!--Bad value for attribute action on element form: Must be non-empty.-->
-            <h4 class="ticket__type">
-              Ticket Type
-            </h4>
-            <label>
-              <input type="radio" name="type">Permanent exhibition
-            </label> <br>
-            <label>
-              <input type="radio" name="type">Temporary exhibition
-            </label> <br>
-            <label>
-              <input type="radio" name="type">Combined Admission
-            </label>
-            <h4 class="ticket__amount">
-              Amount
-            </h4>
-            <p>Basic 18+</p>
-            <button>-</button>
-            <input type="number" value="1">
-            <button>+</button>
-            <p>Senior 65+</p>
-            <button>-</button>
-            <input type="number" value="1">
-            <button>+</button>
-            <h4 class="ticket__Total">
-              Total € <span>220 </span>
-            </h4>
-            <button>Buy Now</button>
+        <div class="tisket">
+          <img src="./assets/img/ticket.jpg" alt="Rectangle" class="img__ticket">
+          <form action="" class="form--ticket"> <!--Bad value for attribute action on element form: Must be non-empty.-->
+            <div class="ticket-wrapper">
+              <h4 class="ticket__form--title">
+                Ticket Type
+              </h4>
+              <label class="ticket__type">
+                <input type="radio" name="radio" class="input--radio">Permanent exhibition
+              </label> <br>
+              <label class="ticket__type">
+                <input type="radio" name="radio" class="input--radio">Temporary exhibition
+              </label> <br>
+              <label class="ticket__type">
+                <input type="radio" name="radio" class="input--radio">Combined Admission
+              </label>
+            </div>
+            <div class="ticket-wrapper">
+              <h4 class="ticket__form--title amount">
+                Amount
+              </h4>
+              <p class="ticket__type ticket__amount">Basic 18+</p>
+              <div class="number">
+                <button class="number-minus" type="button" onclick>-</button>
+                <input type="number" min="0" value="1" readonly>
+                <button class="number-plus" type="button" onclick>+</button>
+              </div>
+              <p class="ticket__type ticket__amount">Senior 65+</p>
+              <div class="number">
+                <button class="number-minus" type="button" onclick>-</button>
+                <input type="number" min="0" value="1" readonly>
+                <button class="number-plus" type="button" onclick>+</button>
+              </div>
+              <h4 class="ticket__form--title total">
+                Total € <span>220</span>
+              </h4>
+              <button class="buy" type="button" onclick>Buy Now</button>
+            </div>
           </form>
         </div>
       </div>
