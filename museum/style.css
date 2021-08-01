@@ -1,5 +1,4 @@
 html{
-  background-color: cadetblue;
   box-sizing: border-box;
   /*max-width: 1920px;*/
   scroll-behavior: smooth;
@@ -149,7 +148,6 @@ a{
   padding-bottom: 20px;
   margin: 0px;
 }
-
 /* конец текста*/
 
 /*блок welcome*/
@@ -229,8 +227,6 @@ a{
 .contacts__wrapper{
   padding-top: 10px;
   max-width: 282px;
-
-
 }
 /* конец блока contacts*/
 
