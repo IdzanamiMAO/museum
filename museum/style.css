@@ -16,7 +16,7 @@ a{
   max-width: 1440px;
   margin: 0px auto;
  }
-.section {
+.section, .footer {
   padding: 75px 0px;
 }
 .dark-section, .header, .footer{
@@ -235,7 +235,7 @@ a{
 }
 /* конец блока explore*/
 
-/*блок video*/ /*два тега input type="range" (громкось и прогрес-бар видео)*/
+/*блок video*/ 
 .video-section{
   padding: 90px 0px 75px;
 }
@@ -253,13 +253,12 @@ a{
   top: 205px;
   left: 610px;
   right: 0;
-
 }
 .player__controls{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
   background-color: #000000;
   height: 85px;
   margin-bottom: 40px;
@@ -464,7 +463,6 @@ margin-left: 15px;
 .img__ticket{
   max-width: 720px;
 }
-
 /* конец блока tickets*/
 
 /*блок contacts*/
@@ -500,5 +498,70 @@ margin-left: 15px;
 /* конец блока contacts*/
 
 /*футер*/
-
+.footer__wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 150px;
+}
+.footer__nav--list{
+  margin: 0px;
+  column-count: 2;
+  padding-left: 4px;
+}
+.footer__nav--item{
+  padding-left: 141px;
+}
+.sotial{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-left: 375px;
+}
+.youtube{
+  background-image: url("./assets/svg/Youtube.svg");
+  background-repeat: no-repeat;
+  background-color: #00000000;
+  width: 48px;
+  height: 48px;
+  border: 0px;
+  margin: 88px 0px 14px 24px;
+}
+.instagram{
+  background-image: url("./assets/svg/Instagram.svg");
+  background-repeat: no-repeat;
+  background-color: #00000000;
+  width: 48px;
+  height: 48px;
+  border: 0px;
+  margin: 88px 0px 14px 24px;
+}
+.facebook{
+  background-image: url("./assets/svg/Facebook.svg");
+  background-repeat: no-repeat;
+  background-color: #00000000;
+  width: 48px;
+  height: 48px;
+  border: 0px;
+  margin: 88px 0px 14px 24px;
+}
+.twitter{
+  background-image: url("./assets/svg/Twitter.svg");
+  background-repeat: no-repeat;
+  background-color: #00000000;
+  width: 48px;
+  height: 48px;
+  border: 0px;
+  margin: 88px 0px 14px 24px;
+}
+.pinterest{
+  background-image: url("./assets/svg/Pinterest.svg");
+  background-repeat: no-repeat;
+  background-color: #00000000;
+  width: 48px;
+  height: 48px;
+  border: 0px;
+  margin: 88px 0px 14px 24px;
+}
 /* конец футера*/

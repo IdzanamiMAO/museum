@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>museum</title>
-  <link rel="stylesheet" href="style.css"> <!--стили css-->
-  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--шрифты: Forum и Roboto-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -40,8 +40,11 @@
       <div class="welcome">
         <div class="container wrapper">
           <h1 class="dark-section__tittle">
-            Welcome<br>to the Louvre
+            Welcome
           </h1>
+          <h2 class="dark-section__tittle">
+            to the Louvre
+          </h2>
           <p class="welcome__desc">
             From the castle to the museum
           </p>
@@ -183,7 +186,7 @@
         </h2>
         <div class="tisket">
           <img src="./assets/img/ticket.jpg" alt="Rectangle" class="img__ticket">
-          <form action="" class="form--ticket"> <!--Bad value for attribute action on element form: Must be non-empty.-->
+          <form class="form--ticket"> <!--Bad value for attribute action on element form: Must be non-empty.-->
             <div class="ticket-wrapper">
               <h4 class="ticket__form--title">
                 Ticket Type
@@ -249,48 +252,36 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="container footer__wrapper">
       <a class="logo__title-link" href="">Louvre</a>
       <nav>
         <ul class="footer__nav--list">
           <li class="footer__nav--item">
-            <a href="#welcome" class="footer__nav--link">Welcome</a>
+            <a href="#welcome" class="nav__link">Welcome</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#visiting" class="footer__nav--link">Visiting</a>
+            <a href="#visiting" class="nav__link">Visiting</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#explore" class="footer__nav--link">Explore</a>
+            <a href="#explore" class="nav__link">Explore</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#video" class="footer__nav--link">Video</a>
+            <a href="#video" class="nav__link">Video</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#tickets" class="footer__nav--link">Tickets</a>
+            <a href="#tickets" class="nav__link">Tickets</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#contacts" class="footer__nav--link">Contacts</a>
+            <a href="#contacts" class="nav__link">Contacts</a>
           </li>
         </ul>
       </nav>
       <div class="sotial">
-        <ul class="sotial__list">
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">youtube</a>
-          </li>
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">instagram</a>
-          </li>
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">facebook</a>
-          </li>
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">twitter</a>
-          </li>
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">pinterest</a>
-          </li>
-        </ul>
+        <a href="#" class="youtube"></a>
+        <a href="#" class="instagram"></a>
+        <a href="#" class="facebook"></a>
+        <a href="#" class="twitter"></a>
+        <a href="#" class="pinterest"></a>
       </div>
     </div>
   </footer>
