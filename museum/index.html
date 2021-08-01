@@ -155,9 +155,19 @@
     </section>
     <section class="section video-section" id="video">
       <div class="container video">
-        <video src="assets/video/video.mp4" poster="assets/video/poster.jpg" controls></video>
+        <video src="#" poster="./assets/video/video_cover.jpg" class="player"></video>
+        <button class="play" type="button" onclick></button>
+        <div class="player__controls">
+          <button class="backward" type="button" onclick></button>
+          <button class="pause" type="button" onclick></button>
+          <button class="forward" type="button" onclick></button>
+          <input type="range" value="40" min="0" max="100" step="1" class="progress-bar">
+          <button class="volume" type="button" onclick></button>
+          <input type="range" value="40" min="0" max="100" step="1" class="volume-lvl">
+          <button class="playback" type="button" onclick></button>
+        </div>
         <div class="video__wrapper">
-          <h2 class="section__title underline-title">
+          <h2 class="section__title">
             Video journey
           </h2>
           <p class="video__desc">
