@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>museum</title>
-  <link rel="stylesheet" href="style.css"> <!--стили css-->
-  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--шрифты: Forum и Roboto-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -39,9 +39,12 @@
     <section class="dark-section" id="welcome">
       <div class="welcome">
         <div class="container wrapper">
-          <h1 class="dark-section__tittle">
-            Welcome<br>to the Louvre
+          <h1 class="caption">
+            Welcome
           </h1>
+          <h2 class="caption">
+            to the Louvre
+          </h2>
           <p class="welcome__desc">
             From the castle to the museum
           </p>
@@ -155,9 +158,19 @@
     </section>
     <section class="section video-section" id="video">
       <div class="container video">
-        <video src="assets/video/video.mp4" poster="assets/video/poster.jpg" controls></video>
+        <video src="#" poster="./assets/video/video_cover.jpg" class="player"></video>
+        <button class="play" type="button" onclick></button>
+        <div class="player__controls">
+          <button class="backward" type="button" onclick></button>
+          <button class="pause" type="button" onclick></button>
+          <button class="forward" type="button" onclick></button>
+          <input type="range" value="40" min="0" max="100" step="1" class="progress-bar">
+          <button class="volume" type="button" onclick></button>
+          <input type="range" value="40" min="0" max="100" step="1" class="volume-lvl">
+          <button class="playback" type="button" onclick></button>
+        </div>
         <div class="video__wrapper">
-          <h2 class="section__title underline-title">
+          <h2 class="section__title">
             Video journey
           </h2>
           <p class="video__desc">
@@ -167,40 +180,48 @@
       </div>
     </section>
     <section class="section dark-section" id="tickets">
-      <div class="container tickets">
+      <div class="container">
         <h2 class="dark-section__tittle underline-title">
           Buy tickets
         </h2>
-        <div class="wrapper">
-          <img src="./assets/img/ticket.jpg" alt="Rectangle">
-          <form action=""> <!--Bad value for attribute action on element form: Must be non-empty.-->
-            <h4 class="ticket__type">
-              Ticket Type
-            </h4>
-            <label>
-              <input type="radio" name="type">Permanent exhibition
-            </label> <br>
-            <label>
-              <input type="radio" name="type">Temporary exhibition
-            </label> <br>
-            <label>
-              <input type="radio" name="type">Combined Admission
-            </label>
-            <h4 class="ticket__amount">
-              Amount
-            </h4>
-            <p>Basic 18+</p>
-            <button>-</button>
-            <input type="number" value="1">
-            <button>+</button>
-            <p>Senior 65+</p>
-            <button>-</button>
-            <input type="number" value="1">
-            <button>+</button>
-            <h4 class="ticket__Total">
-              Total € <span>220 </span>
-            </h4>
-            <button>Buy Now</button>
+        <div class="tisket">
+          <img src="./assets/img/ticket.jpg" alt="Rectangle" class="img__ticket">
+          <form class="form--ticket"> 
+            <div class="ticket-wrapper">
+              <h4 class="ticket__form--title">
+                Ticket Type
+              </h4>
+              <label class="ticket__type">
+                <input type="radio" name="radio" class="input--radio">Permanent exhibition
+              </label> <br>
+              <label class="ticket__type">
+                <input type="radio" name="radio" class="input--radio">Temporary exhibition
+              </label> <br>
+              <label class="ticket__type">
+                <input type="radio" name="radio" class="input--radio">Combined Admission
+              </label>
+            </div>
+            <div class="ticket-wrapper">
+              <h4 class="ticket__form--title amount">
+                Amount
+              </h4>
+              <p class="ticket__type ticket__amount">Basic 18+</p>
+              <div class="number">
+                <button class="number-minus" type="button" onclick>-</button>
+                <input type="number" min="0" value="1" readonly>
+                <button class="number-plus" type="button" onclick>+</button>
+              </div>
+              <p class="ticket__type ticket__amount">Senior 65+</p>
+              <div class="number">
+                <button class="number-minus" type="button" onclick>-</button>
+                <input type="number" min="0" value="1" readonly>
+                <button class="number-plus" type="button" onclick>+</button>
+              </div>
+              <h4 class="ticket__form--title total">
+                Total € <span>220</span>
+              </h4>
+              <button class="buy" type="button" onclick>Buy Now</button>
+            </div>
           </form>
         </div>
       </div>
@@ -231,46 +252,46 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
+    <div class="container footer__wrapper">
       <a class="logo__title-link" href="">Louvre</a>
       <nav>
         <ul class="footer__nav--list">
           <li class="footer__nav--item">
-            <a href="#welcome" class="footer__nav--link">Welcome</a>
+            <a href="#welcome" class="nav__link">Welcome</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#visiting" class="footer__nav--link">Visiting</a>
+            <a href="#visiting" class="nav__link">Visiting</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#explore" class="footer__nav--link">Explore</a>
+            <a href="#explore" class="nav__link">Explore</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#video" class="footer__nav--link">Video</a>
+            <a href="#video" class="nav__link">Video</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#tickets" class="footer__nav--link">Tickets</a>
+            <a href="#tickets" class="nav__link">Tickets</a>
           </li>
           <li class="footer__nav--item">
-            <a href="#contacts" class="footer__nav--link">Contacts</a>
+            <a href="#contacts" class="nav__link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <div class="sotial">
-        <ul class="sotial__list">
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">youtube</a>
+      <div>
+        <ul class="sotial">
+          <li class="youtube">
+            <a href="#" class=""></a>
           </li>
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">instagram</a>
+          <li class="instagram">
+            <a href="#" class=""></a>
           </li>
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">facebook</a>
+          <li class="facebook">
+            <a href="#" class=""></a>
           </li>
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">twitter</a>
+          <li class="twitter">
+            <a href="#" class=""></a>
           </li>
-          <li class="sotial__item">
-            <a href="#" class="sotial__link">pinterest</a>
+          <li class="pinterest">
+            <a href="#" class=""></a>
           </li>
         </ul>
       </div>
