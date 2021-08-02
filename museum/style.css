@@ -165,7 +165,7 @@ a{
   display: flex;
   flex-direction: column;
   max-width: 440px;
-  padding-top: 16px;
+  padding-top: 18px;
 }
 .visiting__card--title{
   font-family: Forum;
@@ -241,6 +241,9 @@ a{
 }
 .video{
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1px;
 }
 .play{
   background-image: url("./assets/svg/video_play.svg");
@@ -287,7 +290,7 @@ a{
   width: 27px;
   height: 30px;
   border: 0px;
-  margin: 0px 41px;
+  margin: 0px 42px;
 }
 .progress-bar{
   background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
@@ -341,7 +344,7 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 103px;
+  padding-top: 104px;
 }
 .form--ticket{
   display: flex;
@@ -469,7 +472,7 @@ margin-left: 15px;
 .contacts{
   display: flex;
   justify-content: space-between;
-  padding-top: 103px;
+  padding-top: 104px;
 }
 .contacts__wrapper{
   padding-top: 10px;
@@ -518,6 +521,7 @@ margin-left: 15px;
   align-items: flex-end;
   justify-content: flex-end;
   padding-left: 375px;
+  margin: 0px;
 }
 .youtube{
   background-image: url("./assets/svg/Youtube.svg");
@@ -565,3 +569,5 @@ margin-left: 15px;
   margin: 88px 0px 14px 24px;
 }
 /* конец футера*/
+
+/*интеррактивность*/
