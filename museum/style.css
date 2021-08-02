@@ -76,7 +76,7 @@ a{
 /*конец хедера*/
 
 /*Заголовки*/
-.dark-section__tittle{
+.dark-section__tittle, .caption{
   font-family: Forum;
   font-style: normal;
   font-weight: normal;
@@ -197,11 +197,11 @@ a{
 .visiting__card--underline::after{
   bottom: -11px;
   left: 0;
-  right: 140px;
   height: 2px;
+  width: 300px;
 }
 .img__tour{
-  max-width: 440px;
+  width: 440px;
 }
 /* конец карточек visiting*/
 
@@ -373,11 +373,12 @@ padding-right: 240px;
   line-height: 26px;
   color: #FFFFFF;
   margin: 0px;
-  cursor: pointer;
   padding-left: 5px;
+  cursor: pointer
 }
 .ticket__amount{
-margin-left: 15px;
+  margin-left: 15px;
+  cursor: auto;
 }
 .input--radio{
   margin: 0px 24px 56px 0px;
@@ -571,3 +572,43 @@ margin-left: 15px;
 /* конец футера*/
 
 /*интеррактивность*/
+/*заголовки*/
+.section__title:hover, .dark-section__tittle:hover, .visiting__card--title:hover{
+  color: #9D8665;
+  cursor: pointer;
+}
+
+/*плавное подчеркивание в карточках*/
+.visiting__card--underline:hover::after {
+  width: 100%;
+  transition-duration: .5s;
+}
+
+/*навигация*/
+.nav__link:hover, .logo__title-link:hover, .nav__link:active{
+  color: #9D8665;
+  cursor: pointer;
+}
+
+/*панель управления видео*/
+.play:hover, .backward:hover, .pause:hover, .forward:hover, .volume:hover, .playback:hover{
+  opacity: 40%;
+  cursor: pointer;
+}
+
+/*соцсети*/
+.youtube:hover, .instagram:hover, .facebook:hover, .twitter:hover, .pinterest:hover{
+  opacity: 60%;
+  cursor: pointer;
+}
+
+/*кнопки*/
+.welcome__button:hover, .buy:hover {
+  cursor: pointer;
+  background-color: #9d8665;
+}
+.number-minus:hover, .number-plus:hover {
+  cursor: pointer;
+  background-color: #9d8665;
+  opacity: 60%;
+}
