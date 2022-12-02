@@ -9,5 +9,7 @@ Skils:
  * работа с бэм
 
 [Deploy]()
+
 [Layout](https://www.figma.com/file/1F7OXZ4FyE9KEkLs2YOTA4/Museum-(Copy)?node-id=0%3A1&t=8uxCbrPj22JKNoHV-0)
+
 [Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/museum/museum.md)
