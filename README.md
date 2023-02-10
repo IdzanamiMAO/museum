@@ -24,7 +24,7 @@ Skils:
 ********************************
 
 
-[Deploy](https://rolling-scopes-school.github.io/idzanamimao-JSFEPRESCHOOL/museum)
+[Deploy](https://idzanamimao.github.io/museum/museum/)
 
 [Layout](https://www.figma.com/file/7dI6mXBFTdTvXxuhZZTt5h/Museum?node-id=2101%3A12&t=0mvdBWS2QcEvJIoG-0)
 
